@@ -1,21 +1,39 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+
+import tools from '../data/tools-list';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+    <section className="section">
+      <h1 className="title is-4">Hi people,</h1>
+      <p>Welcome to your useful online tools website.</p>
+      <p>Now go pick something great to make our life more easier.</p>
 
-export default IndexPage
+      {tools.map((group, i) => (
+        <div key={i}>
+          <h2 className="subtitle m-t-lg">{group.name}</h2>
+          <div className="columns is-mobile is-multiline">
+            {group.childs.map((tool, j) => (
+              <div className="column is-4-desktop is-4-tablet is-6-mobile">
+                <Link to={tool.slug}>
+                  {tool.name}
+                  <br />
+                  <small className="is-size-7 has-text-grey-light">
+                    {tool.desc}
+                  </small>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+  </Layout>
+);
+
+export default IndexPage;

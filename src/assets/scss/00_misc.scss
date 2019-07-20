@@ -1,0 +1,50 @@
+#site {
+  min-height: calc(100vh - 55px - 75px);
+}
+
+.footer {
+  height: 75px;
+  line-height: 75px;
+  padding: 0px 1.5rem;
+}
+
+.border-1px {
+  &-dashed {
+    border-width: 1px;
+    border-style: dashed;
+  }
+}
+
+.min-width {
+  &-50 {
+    min-width: 50px;
+  }
+  &-100 {
+    min-width: 100px;
+  }
+}
+
+.btn {
+  &-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.is {
+  &-w100 {
+    width: 100%;
+  }
+
+  &-margin-center {
+    margin: 0px auto;
+  }
+}

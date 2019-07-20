@@ -1,0 +1,17 @@
+.navbar {
+  height: 55px;
+  &-brand {
+    a {
+      font-family: 'Concert One', cursive;
+      font-size: 1.3rem;
+      &:hover {
+        color: currentColor;
+      }
+    }
+  }
+  &-item {
+    .icon {
+      margin-right: 0.25rem !important;
+    }
+  }
+}
