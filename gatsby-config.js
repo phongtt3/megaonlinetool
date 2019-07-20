@@ -38,6 +38,15 @@ module.exports = {
       },
     },
 
+    // tag manager
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-WFHH3WZ',
+        includeInDevelopment: false,
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
