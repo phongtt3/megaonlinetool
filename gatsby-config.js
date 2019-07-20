@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.megaonlinetool.com`,
     title: `Mega Online Tool`,
     description: `We strive to create beautiful, simple and easy to use online generator, pickers, calculators, converters, utilities, and other online tools to make our life easier.`,
     author: `@phongtt3`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
