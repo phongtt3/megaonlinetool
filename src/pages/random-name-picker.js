@@ -54,7 +54,6 @@ const RandomNamePickerPage = () => {
     let names_array = names.replace(/\r\n/g, '\n').split('\n');
     names_array = filter(names_array, size);
     let remain = names_array.filter((n) => n !== name);
-    console.log(remain);
     setNames(remain.join('\n'));
     setRemoveLabel('removed!');
   };

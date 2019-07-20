@@ -20,7 +20,7 @@ const IndexPage = () => (
           <div className="columns is-mobile is-multiline">
             {group.childs.map((tool, j) => (
               <div className="column is-4-desktop is-4-tablet is-6-mobile">
-                <Link to={tool.slug}>
+                <Link key={j} to={tool.slug}>
                   {tool.name}
                   <br />
                   <small className="is-size-7 has-text-grey-light">
