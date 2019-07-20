@@ -10,7 +10,7 @@ import * as v5 from 'uuid/v5';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import tools from '../datas/tools-list';
+import tools from '../data/tools-list';
 
 const seo = tools[0].childs[1];
 
