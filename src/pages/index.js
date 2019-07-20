@@ -19,8 +19,10 @@ const IndexPage = () => (
           <h2 className="subtitle m-t-lg">{group.name}</h2>
           <div className="columns is-mobile is-multiline">
             {group.childs.map((tool, j) => (
-              <div className="column is-4-desktop is-4-tablet is-6-mobile">
-                <Link key={j} to={tool.slug}>
+              <div
+                key={j}
+                className="column is-4-desktop is-4-tablet is-6-mobile">
+                <Link to={tool.slug}>
                   {tool.name}
                   <br />
                   <small className="is-size-7 has-text-grey-light">
