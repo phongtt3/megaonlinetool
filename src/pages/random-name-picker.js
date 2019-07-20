@@ -102,7 +102,7 @@ const RandomNamePickerPage = () => {
                       value={names}
                       onChange={(e) => setNames(e.target.value)}
                       className="textarea"
-                      placeholder="Enter all names, each per line."
+                      placeholder="Enter all names, one per line."
                       rows="6"></textarea>
                   </div>
                 </div>
