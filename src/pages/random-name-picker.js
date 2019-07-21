@@ -72,7 +72,7 @@ const RandomNamePickerPage = () => {
               <div className="field-label is-inline-block m-r-md min-width-100 is-normal">
                 <label className="label">Label</label>
               </div>
-              <div className="field-body is-inline-block">
+              <div className="field-body is-inline-block-desktop">
                 <div className="field is-narrow">
                   <div className="control">
                     <div className="select">
@@ -113,8 +113,8 @@ const RandomNamePickerPage = () => {
               <div className="field-label is-inline-block m-r-md min-width-100">
                 <label className="label">Shuffle?</label>
               </div>
-              <div className="field-body is-inline-block">
-                <div className="field">
+              <div className="field-body is-inline-block-desktop">
+                <div className="field has-addons">
                   <div className="control">
                     <label className="radio">
                       <input
@@ -135,10 +135,8 @@ const RandomNamePickerPage = () => {
                       />
                       &nbsp;&nbsp;No
                     </label>
-                    <p>
-                      <small className="has-text-grey-light">
-                        <i>Shuffle the list before picking.</i>
-                      </small>
+                    <p className="help has-text-grey-light">
+                      <i>Shuffle the list before picking.</i>
                     </p>
                   </div>
                 </div>
@@ -150,8 +148,8 @@ const RandomNamePickerPage = () => {
               <div className="field-label is-inline-block m-r-md min-width-100">
                 <label className="label">Auto remove?</label>
               </div>
-              <div className="field-body is-inline-block">
-                <div className="field">
+              <div className="field-body is-inline-block-desktop">
+                <div className="field has-addons">
                   <div className="control">
                     <label className="radio">
                       <input
@@ -172,12 +170,8 @@ const RandomNamePickerPage = () => {
                       />
                       &nbsp;&nbsp;No
                     </label>
-                    <p>
-                      <small className="has-text-grey-light">
-                        <i>
-                          if Yes, picked name will be auto remove from list.
-                        </i>
-                      </small>
+                    <p className="help has-text-grey-light">
+                      <i>if Yes, picked name will be auto remove from list.</i>
                     </p>
                   </div>
                 </div>

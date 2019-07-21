@@ -1,5 +1,6 @@
 const tools = [
   {
+    // 0
     name: 'Generator',
     childs: [
       {
@@ -16,6 +17,7 @@ const tools = [
     ],
   },
   {
+    // 1
     name: 'Randomness',
     childs: [
       {
@@ -27,6 +29,18 @@ const tools = [
         name: 'Yes or No Decision Maker',
         slug: '/yes-or-no',
         desc: 'this tool help you make decision for 50-50 concerns thing.',
+      },
+    ],
+  },
+  {
+    // 2
+    name: 'Calculator',
+    childs: [
+      {
+        name: 'Google Adsence Calculator',
+        slug: '/google-adsence-calculator',
+        desc:
+          'how much traffic and pageviews you need to make a decent living with Google Adsence',
       },
     ],
   },
