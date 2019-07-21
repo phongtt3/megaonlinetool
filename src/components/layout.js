@@ -22,6 +22,11 @@ const Layout = ({ children }) => {
               Privacy Policy
             </Link>
           </li>
+          <li className="is-size-7 is-inline m-r-md">
+            <Link className="has-text-grey" to="/tos">
+              Terms of Service
+            </Link>
+          </li>
           <li className="is-size-7 is-inline">
             <Link className="has-text-grey" to="/contact">
               Contact Us
