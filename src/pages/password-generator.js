@@ -18,6 +18,7 @@ const PasswordGeneratorPage = () => {
   const [pw_numbers, setNumbers] = useState(true);
   const [pw_symbols, setSymbols] = useState(false);
   const [pw_uppercase, setUppercase] = useState(true);
+  const [pw_sim_chars, setSimChars] = useState(true);
 
   const [copy_label, setCopyLabel] = useState('Copy');
   const copySuccess = () => {
@@ -30,6 +31,7 @@ const PasswordGeneratorPage = () => {
       numbers: pw_numbers,
       symbols: pw_symbols,
       uppercase: pw_uppercase,
+      excludeSimilarCharacters: pw_sim_chars,
     });
     setPw(new_pw);
     setCopyLabel('Copy');
@@ -49,7 +51,7 @@ const PasswordGeneratorPage = () => {
                 <label className="label">Length</label>
               </div>
               <div className="field-body is-inline-block">
-                <div className="field is-narrow">
+                <div className="field is-narrow has-addons">
                   <div className="control">
                     <div className="select">
                       <select
@@ -62,6 +64,9 @@ const PasswordGeneratorPage = () => {
                         ))}
                       </select>
                     </div>
+                    <p className="help has-text-grey-light">
+                      <i>Integer, length of password.</i>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -73,7 +78,7 @@ const PasswordGeneratorPage = () => {
                 <label className="label">Numbers?</label>
               </div>
               <div className="field-body is-inline-block">
-                <div className="field">
+                <div className="field has-addons">
                   <div className="control">
                     <label className="radio">
                       <input
@@ -94,6 +99,9 @@ const PasswordGeneratorPage = () => {
                       />
                       &nbsp;&nbsp;No
                     </label>
+                    <p className="help has-text-grey-light">
+                      <i>Put numbers in password.</i>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -105,7 +113,7 @@ const PasswordGeneratorPage = () => {
                 <label className="label">Symbols?</label>
               </div>
               <div className="field-body is-inline-block">
-                <div className="field">
+                <div className="field has-addons">
                   <div className="control">
                     <label className="radio">
                       <input
@@ -126,6 +134,9 @@ const PasswordGeneratorPage = () => {
                       />
                       &nbsp;&nbsp;No
                     </label>
+                    <p className="help has-text-grey-light">
+                      <i>Put symbols in password.</i>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -158,6 +169,44 @@ const PasswordGeneratorPage = () => {
                       />
                       &nbsp;&nbsp;No
                     </label>
+                    <p className="help has-text-grey-light">
+                      <i>Use uppercase letters in password.</i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* pw simchars */}
+            <div className="field is-horizontal">
+              <div className="field-label is-inline-block m-r-md min-width-100">
+                <label className="label">Similar Characters?</label>
+              </div>
+              <div className="field-body is-inline-block">
+                <div className="field">
+                  <div className="control">
+                    <label className="radio">
+                      <input
+                        name="simchars"
+                        onChange={() => setSimChars(false)}
+                        value={false}
+                        type="radio"
+                      />
+                      &nbsp;&nbsp;Yes
+                    </label>
+                    <label className="radio">
+                      <input
+                        name="simchars"
+                        onChange={() => setSimChars(true)}
+                        value={true}
+                        type="radio"
+                        defaultChecked
+                      />
+                      &nbsp;&nbsp;No
+                    </label>
+                    <p className="help has-text-grey-light">
+                      <i>Use similar chars, like 'i' and 'l', 'o', '0'..</i>
+                    </p>
                   </div>
                 </div>
               </div>
