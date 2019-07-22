@@ -264,7 +264,7 @@ const GoogleAdsenceCalcPage = () => {
           number of click on ad-units.
         </p>
         <p>
-          - PVPS: pageviews per session, or pageviews per visitor. PPS is
+          - PVPS: pageviews per session, or pageviews per visitor. PVPS is
           displayed as an average, which is calculated by dividing the total
           number of pageviews by the total number of sessions.
         </p>
