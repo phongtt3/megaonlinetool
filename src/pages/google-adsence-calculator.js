@@ -54,6 +54,7 @@ const GoogleAdsenceCalcPage = () => {
         <h1 className="title is-4">
           {seo.name} {this_year}
         </h1>
+        <h2 className="subtitle has-text-grey is-6">{seo.desc}</h2>
         <br />
 
         <div className="columns">

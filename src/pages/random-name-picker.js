@@ -63,6 +63,7 @@ const RandomNamePickerPage = () => {
       <SEO title={seo.name} description={seo.desc} />
       <section className="section">
         <h1 className="title is-4">{seo.name}</h1>
+        <h2 className="subtitle has-text-grey is-6">{seo.desc}</h2>
         <br />
 
         <div className="columns">

@@ -34,6 +34,9 @@ const YesOrNoPage = () => {
         <div className="columns">
           <div className="column is-8-desktop has-text-centered">
             <h1 className="title is-4 has-text-centered">{seo.name}</h1>
+            <h2 className="subtitle has-text-centered has-text-grey is-6">
+              {seo.desc}
+            </h2>
             <br />
             <button
               onClick={() => startMake()}

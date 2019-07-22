@@ -28,7 +28,7 @@ const tools = [
       {
         name: 'Yes or No Decision Maker',
         slug: '/yes-or-no',
-        desc: 'this tool help you make decision for 50-50 concerns thing.',
+        desc: 'this tool help you make tough decisions (50-50)',
       },
     ],
   },
