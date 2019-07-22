@@ -22,10 +22,10 @@ const overrideCss = css`
 
 const GoogleAdsenceCalcPage = () => {
   const [loading, setLoading] = useState(false);
-  const [target, setTarget] = useState(100);
+  const [target, setTarget] = useState(500);
   const [cpc, setCpc] = useState(1.5);
-  const [ctr, setCtr] = useState(1);
-  const [pps, setPps] = useState(1.1);
+  const [ctr, setCtr] = useState(2);
+  const [pps, setPps] = useState(1.2);
   const [was, setWas] = useState(65);
   const [need_clicks, setNC] = useState(0);
   const [need_pvs, setPVS] = useState(0);
@@ -149,7 +149,7 @@ const GoogleAdsenceCalcPage = () => {
             {/* pps */}
             <div className="field is-horizontal">
               <div className="field-label is-inline-block m-r-md min-width-100 is-normal">
-                <label className="label">PPS</label>
+                <label className="label">PVPS</label>
               </div>
               <div className="field-body is-inline-block">
                 <div className="field is-narrow has-addons">
@@ -264,7 +264,7 @@ const GoogleAdsenceCalcPage = () => {
           number of click on ad-units.
         </p>
         <p>
-          - PPS: pageviews per session, or pageviews per visitor. PPS is
+          - PVPS: pageviews per session, or pageviews per visitor. PPS is
           displayed as an average, which is calculated by dividing the total
           number of pageviews by the total number of sessions.
         </p>
