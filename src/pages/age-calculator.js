@@ -19,7 +19,7 @@ const overrideCss = css`
 
 const AgeCalcPage = () => {
   const [loading, setLoading] = useState(false);
-  const [calendar, setCalendar] = useState(0);
+  const [calendar, setCalendar] = useState('0');
   const [from, setFrom] = useState(new Date('October 3, 1989'));
   const [to, setTo] = useState(new Date());
   const [res, setRes] = useState('');
@@ -28,7 +28,7 @@ const AgeCalcPage = () => {
   const [res_lined, setResLineD] = useState('');
 
   const getMonthLength = (month, year, julianFlag) => {
-    var ml;
+    let ml;
     if (
       month === 1 ||
       month === 3 ||
@@ -42,7 +42,7 @@ const AgeCalcPage = () => {
     } else {
       if (month === 2) {
         ml = 28;
-        if (!(year % 4) && (julianFlag === 1 || year % 100 || !(year % 400)))
+        if (!(year % 4) && (julianFlag === '1' || year % 100 || !(year % 400)))
           ml++;
       } else {
         ml = 30;
@@ -96,6 +96,8 @@ const AgeCalcPage = () => {
 
       ya = yd - yb;
 
+      if (calendar === '2') ya += 1;
+
       setRes('ok');
 
       let rly = `<b>${ya}</b>`;
@@ -143,8 +145,9 @@ const AgeCalcPage = () => {
                       <select
                         onChange={(e) => setCalendar(e.target.value)}
                         defaultValue={calendar}>
-                        <option value="0">Gregorian</option>
-                        <option value="1">Julian</option>
+                        <option value={0}>Gregorian</option>
+                        <option value={1}>Julian</option>
+                        <option value={2}>Lunar</option>
                       </select>
                     </div>
                     <p className="help has-text-grey-light">
@@ -270,8 +273,23 @@ const AgeCalcPage = () => {
         </p>
         <br />
         <p>
-          The current inconsistency between Julian and Gregorian calendars is 13
-          days. But, the difference will become 14 days in 2100.
+          <small>
+            The current inconsistency between Julian and Gregorian calendars is
+            13 days. But, the difference will become 14 days in 2100.
+          </small>
+        </p>
+        <br />
+        <p>
+          - Lunar calendar is a calendar based upon the monthly cycles of the
+          Moon's phases, a lunar year, is only 354 days, 8 hours, 48 minutes, 34
+          seconds.
+        </p>
+        <br />
+        <p>
+          <small>
+            Your Lunar Age = current year in lunar calendar – your birth year in
+            lunar calendar + 1.
+          </small>
         </p>
       </section>
     </Layout>
