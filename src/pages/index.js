@@ -11,8 +11,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="section">
       <h1 className="title is-4">Hi people,</h1>
-      <p>Welcome to your useful online tools website.</p>
-      <p>Now go pick something great to make our life more easier.</p>
+      <p>Welcome to your useful online tools website,</p>
+      <p>Now go pick something great to make the life more easier.</p>
 
       {tools.map((group, i) => (
         <div key={i}>
