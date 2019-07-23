@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import { css } from '@emotion/core';
 import { BarLoader } from 'react-spinners';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faDollarSign,
-  faPercent,
-  faNewspaper,
-} from '@fortawesome/free-solid-svg-icons';
+
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
