@@ -42,6 +42,12 @@ const tools = [
         desc:
           'how much traffic and pageviews you need to make a decent living with Google Adsence',
       },
+      {
+        name: 'Multi Calendars Age Calculator',
+        slug: '/age-calculator',
+        desc:
+          'try to figure out exactly how old you are, including the years, months, and days',
+      },
     ],
   },
 ];
