@@ -4,7 +4,10 @@ import SEO from '../components/seo';
 
 const TosPage = () => (
   <Layout>
-    <SEO title="Terms of Service" />
+    <SEO
+      title="Terms of Service"
+      description="MegaOnlineTool Terms of Service"
+    />
     <section className="section">
       <h1 className="title">MegaOnlineTool Terms of Service</h1>
       <h2 className="subtitle m-t-md">1. Terms</h2>

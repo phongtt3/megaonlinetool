@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact Us" />
+    <SEO title="Contact Us" description="MegaOnlineTool Contact Us" />
     <section className="section">
       <h1 className="title">Contact Us</h1>
       <HubspotForm

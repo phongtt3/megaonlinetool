@@ -5,7 +5,10 @@ import SEO from '../components/seo';
 
 const PrivacyPage = () => (
   <Layout>
-    <SEO title="Privacy Policy" />
+    <SEO
+      title="Privacy Policy"
+      description="Privacy Policy for MegaOnlineTool"
+    />
     <section className="section">
       <h1 className="title">Privacy Policy for MegaOnlineTool</h1>
 
