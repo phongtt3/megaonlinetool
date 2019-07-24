@@ -6,13 +6,13 @@ const tools = [
       {
         name: 'Strong Password Generator',
         slug: '/password-generator',
-        desc: 'random, strong, unique password generator with one click.',
+        desc: 'random, strong, unique password generator with one click',
       },
       {
         name: 'UUID Multi Versions Generator',
         slug: '/uuid-generator',
         desc:
-          'uuid generator and download, single or multi uuids using v1, v3, v4, v5.',
+          'uuid generator and download, single or multi uuids using v1, v3, v4, v5',
       },
     ],
   },
@@ -23,12 +23,17 @@ const tools = [
       {
         name: 'Random Name Picker',
         slug: '/random-name-picker',
-        desc: 'pick a random name from list, configurable and shuffleable.',
+        desc: 'pick a random name from list, configurable and shuffleable',
       },
       {
         name: 'Yes or No Decision Maker',
         slug: '/yes-or-no',
         desc: 'this tool help you make tough decisions (50-50)',
+      },
+      {
+        name: 'Random Popular Animals Generator',
+        slug: '/animal-generator',
+        desc: 'generate random animals from most simple and popular list',
       },
     ],
   },
