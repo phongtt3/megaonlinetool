@@ -20,7 +20,7 @@ const overrideCss = css`
 const AgeCalcPage = () => {
   const [loading, setLoading] = useState(false);
   const [calendar, setCalendar] = useState('0');
-  const [from, setFrom] = useState(new Date('October 3, 1989'));
+  const [from, setFrom] = useState(new Date());
   const [to, setTo] = useState(new Date());
   const [res, setRes] = useState('');
   const [res_liney, setResLineY] = useState('');
