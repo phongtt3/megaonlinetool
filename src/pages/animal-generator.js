@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { sampleSize } from 'lodash';
+import { sampleSize, range } from 'lodash';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -11,9 +11,22 @@ const seo = tools[1].childs[2];
 
 const RandomAnimalsPage = () => {
   const [anmlist, setList] = useState(sampleSize(animals, 6));
+  const [amount, setAmount] = useState(6);
+  const [div_class, setClass] = useState(
+    'is-4-desktop is-4-tablet is-6-mobile'
+  );
 
   const refresh = () => {
-    setList(sampleSize(animals, 6));
+    if (amount >= 3) {
+      setClass('is-4-desktop is-4-tablet is-6-mobile');
+    }
+    if (amount == 2) {
+      setClass('is-6');
+    }
+    if (amount == 1) {
+      setClass('is-12');
+    }
+    setList(sampleSize(animals, amount));
   };
 
   return (
@@ -31,7 +44,7 @@ const RandomAnimalsPage = () => {
               {anmlist.map((animal, i) => (
                 <div
                   key={i}
-                  className="column is-4-desktop is-4-tablet is-6-mobile has-text-centered">
+                  className={`column has-text-centered ${div_class}`}>
                   <img alt={animal.name} src={animal.image} />
                   <p>{animal.name}</p>
                 </div>
@@ -44,6 +57,31 @@ const RandomAnimalsPage = () => {
               <button onClick={() => refresh()} className={`button is-primary`}>
                 More
               </button>
+            </div>
+
+            {/* pw length */}
+            <br />
+            <div className="field is-horizontal">
+              <div className="field-label is-inline-block m-r-md min-width-100 is-normal">
+                <label className="label">Amount</label>
+              </div>
+              <div className="field-body is-inline-block">
+                <div className="field is-narrow has-addons">
+                  <div className="control">
+                    <div className="select">
+                      <select
+                        onChange={(e) => setAmount(e.target.value)}
+                        defaultValue={amount}>
+                        {range(1, 7).map((i) => (
+                          <option key={i} value={i}>
+                            {i}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
