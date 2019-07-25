@@ -20,10 +20,10 @@ const RandomAnimalsPage = () => {
     if (amount >= 3) {
       setClass('is-4-desktop is-4-tablet is-6-mobile');
     }
-    if (amount == 2) {
+    if (amount === 2) {
       setClass('is-6');
     }
-    if (amount == 1) {
+    if (amount === 1) {
       setClass('is-12');
     }
     setList(sampleSize(animals, amount));
