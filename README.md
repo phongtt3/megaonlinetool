@@ -1,4 +1,4 @@
-MegaOnlineTool is free forever, no ads website provide useful online tools.
+MegaOnlineTool is free-forever, no-ads website provide useful online tools to make the life more easier.
 
 I try my best to add new tool whenever I have free time!
 
