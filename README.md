@@ -6,7 +6,10 @@ I try my best to add new tool whenever I have free time!
 
 1.  **Create a Gatsby site.**
 
-    Clone this repository
+    Clone this repository and install dependancies
+    ```sh
+    yarn install
+    ```
 
 1.  **Start developing.**
 
@@ -14,7 +17,7 @@ I try my best to add new tool whenever I have free time!
 
     ```sh
     cd your-path-to-this-repo/
-    gatsby develop
+    yarn dev
     ```
 
 1.  **Open the source code and start editing!**
