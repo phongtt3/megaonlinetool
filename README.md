@@ -12,6 +12,7 @@ MegaOnlineTool is build with [gatsby](https://www.gatsbyjs.org), [bulmacss](http
 
     Clone this repository and install dependancies
     ```sh
+    cd your-path-to-this-repo/
     yarn install
     ```
 
@@ -20,7 +21,6 @@ MegaOnlineTool is build with [gatsby](https://www.gatsbyjs.org), [bulmacss](http
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd your-path-to-this-repo/
     yarn dev
     ```
 
